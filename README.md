@@ -1,2 +1,3 @@
 # zayle_
-연습용이다..
+// about study in https://www.acmicpc.net/step 
+
