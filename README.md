@@ -1,3 +1,3 @@
 # zayle_
-// about study in https://www.acmicpc.net/step 
+// about some study (mostly(ISBN 978-89-6848-147-5 93000))
 
