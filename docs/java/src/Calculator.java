@@ -9,9 +9,9 @@ public class Calculator {
         while(run){
             int nData1= 0;
             int nData2= 0;
-            System.out.println("--------------------------------");
-            System.out.println("1. plus | 2. divide |  3. Exit ");
-            System.out.println("--------------------------------");
+            System.out.println("--------------------------------------------------------");
+            System.out.println("1. plus | 2. minus | 3. divide | 4. Multiply | 5. Exit");
+            System.out.println("--------------------------------------------------------");
             System.out.print("Select> : ");
             int selectNum = sc.nextInt();
             switch(selectNum){
@@ -21,19 +21,43 @@ public class Calculator {
                     nData1=sc.nextInt();
                     System.out.println("Please input second int.");
                     nData2=sc.nextInt();
-                    plus(nData1,nData2);
+                    int nPlusData = plus(nData1,nData2);
+                    System.out.println("Answer : "+nPlusData);
+    
                     break;
                 } 
                 case 2 :{
+                    System.out.println("System.minus.unit...");
+                    System.out.println("Please input first int.");
+                    nData1=sc.nextInt();
+                    System.out.println("Please input second int.");
+                    nData2=sc.nextInt();
+                    int nMinusData= minus(nData1,nData2);
+                    System.out.println("Answer : "+nMinusData);
+                    break;
+                } 
+                case 3 :{
                     System.out.println("System.divide.unit...");
                     System.out.println("Please input first int.");
                     nData1=sc.nextInt();
                     System.out.println("Please input second int.");
                     nData2=sc.nextInt();
-                    divide(nData1,nData2);
+                    double nDivideData= divide(nData1,nData2);
+                    System.out.println("Answer : "+nDivideData);
                     break;
+                    
                 } 
-                case 3 :{
+                case 4 :{
+                    System.out.println("System.multiply.unit...");
+                    System.out.println("Please input first int.");
+                    nData1=sc.nextInt();
+                    System.out.println("Please input second int.");
+                    nData2=sc.nextInt();
+                    int nMultiplyData= multiply(nData1,nData2);
+                    System.out.println("Answer : "+nMultiplyData);
+                    break;
+                }
+                case 5:{
                     run=false;
                     break;
                 } 
@@ -51,12 +75,25 @@ public class Calculator {
     }
     public static int plus(int int1, int int2){
         int temp =int1+int2;
-        System.out.println("Answer : "+temp);
+        return temp;
+    }
+    public static int minus(int int1, int int2){
+        int temp =0;
+        if(int1==int2){
+            temp = 0;
+        }else if(int1<int2){
+            temp = int2-int1;
+        }else{
+            temp = int1-int2;
+        }
         return temp;
     }
     public static double divide(int int1, int int2){
         double temp =int1/int2;
-        System.out.println("Answer : "+temp);
+        return temp;
+    }
+    public static int multiply(int int1, int int2){
+        int temp = int1*int2;
         return temp;
     }
     public static void powerOff(){
