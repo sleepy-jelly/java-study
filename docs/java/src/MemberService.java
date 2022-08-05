@@ -11,7 +11,7 @@ public class MemberService {
     }
     static boolean login(String id,String password){
         boolean nTemp= false;
-        if(id=="hong"&password=="12345"){
+        if("hong".equals(id)&&"12345".equals(password)){
             System.out.println("successfuly login...");
             nTemp=true;
         }else{
