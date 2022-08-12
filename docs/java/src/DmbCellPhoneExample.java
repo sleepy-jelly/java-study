@@ -12,9 +12,6 @@ public class DmbCellPhoneExample {
 
 
 
-
-
-
         //feild by DmbCellPhone
 
         System.out.println("Channel : "+dmbNew1.channel);
@@ -26,7 +23,7 @@ public class DmbCellPhoneExample {
         dmbNew1.sendVoice("ah hi");
         dmbNew1.hangUp();
 
-
+        
         //Calling DmbCellPhone method
         
         dmbNew1.turnOnDmb();

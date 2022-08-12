@@ -43,7 +43,7 @@ public class Calculator {
                     System.out.println("Please input second int.");
                     nData2=sc.nextInt();
                     double nDivideData= divide(nData1,nData2);
-                    System.out.println("Answer : "+nDivideData);
+                    System.out.printf("answer =: %.2f\n",nDivideData);
                     break;
                     
                 } 
