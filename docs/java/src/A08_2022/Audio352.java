@@ -13,14 +13,14 @@ public class Audio352 implements RemoteControl347{
     }
 
     public void setVolume(int volume){
-        if(volume>MAX_VOLUME){
-            this.volume=MAX_VOLUME;
-        }else if(volume<MIN_VOLUME){
-            this.volume=MIN_VOLUME;
+        if(volume>RemoteControl347.MAX_VOLUME){
+            this.volume=RemoteControl347.MAX_VOLUME;
+        }else if(volume<RemoteControl347.MIN_VOLUME){
+            this.volume=RemoteControl347.MIN_VOLUME;
         }else{
             this.volume= volume;
         }
-        System.out.println("Currently audio volume = "+volume);
+        System.out.println("Currently audio volume = "+this.volume);
 
     }
 
