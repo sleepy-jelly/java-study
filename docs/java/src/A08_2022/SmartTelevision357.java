@@ -20,7 +20,6 @@ public class SmartTelevision357 implements RemoteControl347, Searchable356 {
             this.volume= volume;
         }
         System.out.println("Currently audio volume = "+this.volume);
-
     }
     
     public void search(String url){
